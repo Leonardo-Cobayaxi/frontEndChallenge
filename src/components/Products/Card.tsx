@@ -7,8 +7,6 @@ import { userContext } from '../../contexts/userContext';
 export const Card = (Product: Product) => {
     const { setShopList, setIsOpenCartItem, shopList, setTotalPrice, totalPrice } = useContext(userContext)
 
-
-
     function handleShopListClick() {
         setIsOpenCartItem(true)
         const idCheck = shopList.find(f => f.id === Product.id)
@@ -16,13 +14,11 @@ export const Card = (Product: Product) => {
             setShopList([...shopList, Product])
             setTotalPrice(Number(totalPrice) + Number(Product.price))
             console.log(totalPrice)
-
         } else
-
             return
     }
-    return (
 
+    return (
         <div className='card' key={Product.id}>
             <img className='productImg' src={Product.photo} alt="Product" />
             <div className='priceTag'>

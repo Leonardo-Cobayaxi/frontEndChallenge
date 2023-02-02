@@ -1,22 +1,15 @@
 import './CartItem.css'
 import { Product } from '../Products/ProductList'
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useState } from 'react';
 import { userContext } from '../../contexts/userContext';
-import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from '../../Store'
-import { decrement, increment, reset } from '../../Store/Stock.store';
+
 export const CartItem = (Product: Product) => {
-    const { isOpenCartItem, setIsOpenCartItem, setShopList, setTotalPrice, shopList, totalPrice } = useContext(userContext)
-    const dispatch = useDispatch()
-    const stock = useSelector((state: RootState) => state.stock)
+    const { isOpenCartItem, setTotalPrice, shopList, totalPrice } = useContext(userContext)
+
     const [counter, setCounter] = useState(1)
     function handleShopListCancel() {
-        // setIsOpenCartItem(false)
-        // setShopList([])
         setTotalPrice(totalPrice - (counter * Number(Product.price)))
-        dispatch(reset())
         shopList.splice(shopList.findIndex(f => f.id === Product.id), 1)
-
     }
     const increase = () => {
         setCounter(counter + 1);
@@ -30,10 +23,7 @@ export const CartItem = (Product: Product) => {
             setTotalPrice(totalPrice - Number(Product.price))
         } else return
     };
-    // useEffect(() => {
 
-    //     setTotalPrice(totalPrice)
-    // }, [counter])
 
     return (
         <div className={isOpenCartItem ? 'cartItem' : 'cartItemNone'}>
