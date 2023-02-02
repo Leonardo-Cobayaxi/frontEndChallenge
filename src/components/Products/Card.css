@@ -1,0 +1,114 @@
+.card {
+    height: 40vh;
+    width: 17vw;
+    border-radius: 8px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin: 14px 21px 21px 7px;
+    border-radius: 10%;
+    position: relative;
+    box-shadow: 0px 2px 8px 0px #00000022;
+
+}
+
+.productImg {
+    height: 45%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+    margin-bottom: 5%;
+}
+
+.productImg:hover {
+    transform: scale(1.1);
+}
+
+.priceTag {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 0px 5px 0px 5px;
+}
+
+.price {
+    background-color: #373737;
+    right: 0px;
+    top: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0px;
+    border-radius: 10%;
+    color: #FFFFFF;
+    height: fit-content;
+    padding: 7px;
+}
+
+.productName {
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 50%;
+    padding-top: 2%;
+    color: #2C2C2C;
+
+}
+
+.description {
+    text-align: left;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 12px;
+    letter-spacing: 0px;
+    position: absolute;
+    top: 67%;
+    margin: 0px 1% 0px 1%;
+    color: #2C2C2C;
+}
+
+.card button {
+    display: flex;
+    height: 45px;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 1vw;
+    background-color: #0F52BA;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 0px 0px 15px 15px;
+    border-color: #0F52BA;
+    border-style: solid;
+
+}
+
+.card button:hover {
+    background-color: #340fba;
+    border-color: #340fba;
+
+
+}
+
+.card button img {
+    height: 70%;
+    width: 7%;
+}
+
+.card button p {
+    height: 14px;
+    width: 50%;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0px;
+    display: flex;
+    align-items: center;
+
+}
