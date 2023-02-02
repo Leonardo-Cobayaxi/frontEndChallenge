@@ -5,15 +5,21 @@ import { Product } from './ProductList'
 import { userContext } from '../../contexts/userContext';
 
 export const Card = (Product: Product) => {
-    const { setShopList, setIsOpenCartItem, setTotalPrice } = useContext(userContext)
+    const { setShopList, setIsOpenCartItem, shopList, setTotalPrice, totalPrice } = useContext(userContext)
+
+
 
     function handleShopListClick() {
-        let arrayList: any = []
-        arrayList.push(Product)
-        setShopList(arrayList)
         setIsOpenCartItem(true)
-        setTotalPrice(Product.price)
-        return
+        const idCheck = shopList.find(f => f.id === Product.id)
+        if (idCheck === undefined && shopList.length < 4) {
+            setShopList([...shopList, Product])
+            setTotalPrice(Number(totalPrice) + Number(Product.price))
+            console.log(totalPrice)
+
+        } else
+
+            return
     }
     return (
 

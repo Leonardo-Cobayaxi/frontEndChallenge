@@ -9,7 +9,7 @@ export const Cart: React.FC = () => {
     const { isOpenCart, setIsOpenCart } = useContext(userContext)
 
     useEffect(() => {
-    }, [shopList])
+    }, [shopList, totalPrice])
 
     return (
         <div className={isOpenCart ? 'cart' : 'cartNone'} >
