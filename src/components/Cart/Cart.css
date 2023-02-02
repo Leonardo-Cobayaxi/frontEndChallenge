@@ -1,0 +1,92 @@
+.cart {
+    background-color: #0F52BA;
+    width: 32vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -5px 0px 6px 0px #00000021;
+    position: relative;
+}
+
+.cartNone {
+    display: none;
+}
+
+.cart button {
+    background-color: black;
+    color: #FFFF;
+
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFFF;
+    margin: 14px 21px 0px 21px;
+}
+
+.title h2 {
+    font-family: Montserrat, sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 40%;
+
+}
+
+.title button {
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+}
+
+.shopList {
+    margin: 14px 0px 0px 0px;
+}
+
+
+
+.listTotal {
+    color: #FFFF;
+    font-family: Montserrat, sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0px;
+    position: absolute;
+    bottom: 15vh;
+    left: 1vw;
+}
+
+.listCost {
+    color: #FFFF;
+    font-family: Montserrat, sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0px;
+    position: absolute;
+    bottom: 15vh;
+    right: 2vw;
+}
+
+.checkout {
+    height: 10vh;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.checkout p {
+    font-family: Montserrat, sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0px;
+
+
+}
