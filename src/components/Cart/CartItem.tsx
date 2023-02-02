@@ -1,6 +1,6 @@
 import './CartItem.css'
 import { Product } from '../Products/ProductList'
-import { useContext, useState, useEffect } from 'react';
+import { useContext, useEffect } from 'react';
 import { userContext } from '../../contexts/userContext';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../Store'
@@ -22,7 +22,7 @@ export const CartItem = (Product: Product) => {
 
     return (
         <div className={isOpenCartItem ? 'cartItem' : 'cartItemNone'}>
-            <img src={Product.photo}></img>
+            <img src={Product.photo} alt="Product"></img>
             <div className='cartItemName'>
                 <p>{Product.brand + ' ' + Product.name}</p>
             </div>

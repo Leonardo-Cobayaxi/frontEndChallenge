@@ -13,8 +13,6 @@ header div {
     display: flex;
     color: #FFFFFF;
     gap: 0.2rem;
-
-
 }
 
 header button {
@@ -28,27 +26,20 @@ header button {
     border-style: solid;
     border-radius: 10%;
     border-color: #FFFFFF;
+
 }
 
 h1 {
-    font-family: Montserrat, sans-serif;
     font-size: 35px;
     font-weight: 600;
     line-height: 19px;
     letter-spacing: 0px;
-
-
-
-
 }
 
 h4 {
-    font-family: Montserrat, sans-serif;
     font-size: 15px;
     font-weight: lighter;
     line-height: 8px;
     letter-spacing: 0px;
     margin-top: 8.5%;
-
-
 }

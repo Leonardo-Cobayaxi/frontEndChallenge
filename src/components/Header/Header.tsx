@@ -1,5 +1,5 @@
-import './Header.css'
-import React, { useContext } from 'react';
+import "./Header.css"
+import { useContext } from 'react';
 import Cart from '../../assets/cart.svg'
 import { userContext } from '../../contexts/userContext';
 export const Header: React.FC = () => {
@@ -11,7 +11,7 @@ export const Header: React.FC = () => {
                 <h4>Sistemas</h4>
             </div>
             <button onClick={() => setIsOpenCart(true)}>
-                <img src={Cart} />
+                <img src={Cart} alt="Shopping cart icon" />
                 <p>{shopList.length}</p>
             </button>
         </header>

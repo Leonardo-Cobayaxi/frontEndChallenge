@@ -22,6 +22,10 @@
     margin-bottom: 5%;
 }
 
+.productImg:hover {
+    transform: scale(1.1);
+}
+
 .priceTag {
     display: flex;
     justify-content: space-between;
@@ -31,7 +35,6 @@
 
 .price {
     background-color: #373737;
-    font-family: Montserrat, sans-serif;
     right: 0px;
     top: 10px;
     font-size: 15px;
@@ -45,7 +48,7 @@
 }
 
 .productName {
-    font-family: Montserrat, sans-serif;
+
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
@@ -59,7 +62,6 @@
 
 .description {
     text-align: left;
-    font-family: Montserrat, sans-serif;
     font-size: 10px;
     font-weight: 300;
     line-height: 12px;
@@ -86,6 +88,13 @@
 
 }
 
+.card button:hover {
+    background-color: #340fba;
+    border-color: #340fba;
+
+
+}
+
 .card button img {
     height: 70%;
     width: 7%;
@@ -95,7 +104,6 @@
     height: 14px;
     width: 50%;
     color: #FFFFFF;
-    font-family: Montserrat, sans-serif;
     font-size: 24px;
     font-weight: 600;
     line-height: 18px;

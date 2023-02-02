@@ -15,7 +15,6 @@ export const Card = (Product: Product) => {
         setTotalPrice(Product.price)
         return
     }
-
     return (
 
         <div className='card' key={Product.id}>

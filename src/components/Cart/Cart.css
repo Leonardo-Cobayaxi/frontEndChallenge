@@ -28,7 +28,6 @@
 }
 
 .title h2 {
-    font-family: Montserrat, sans-serif;
     font-size: 27px;
     font-weight: 600;
     line-height: 33px;
@@ -52,7 +51,6 @@
 
 .listTotal {
     color: #FFFF;
-    font-family: Montserrat, sans-serif;
     font-size: 21px;
     font-weight: 700;
     line-height: 15px;
@@ -64,7 +62,6 @@
 
 .listCost {
     color: #FFFF;
-    font-family: Montserrat, sans-serif;
     font-size: 21px;
     font-weight: 700;
     line-height: 15px;
@@ -82,7 +79,6 @@
 }
 
 .checkout p {
-    font-family: Montserrat, sans-serif;
     font-size: 21px;
     font-weight: 700;
     line-height: 15px;

@@ -12,7 +12,7 @@ export type Product = {
     price: number
 }
 
-export const ProductList = () => {
+export const ProductList: React.FC = () => {
     const [products, setProducts] = useState<Product[] | null>(null)
     function getAllProducts() {
         const url = 'https://mks-challenge-api-frontend.herokuapp.com/api/v1/products?page=1&rows=8&sortBy=id&orderBy=ASC'

@@ -25,7 +25,6 @@
 .cartItemName {
     text-align: left;
     max-width: 20%;
-    font-family: Montserrat, sans-serif;
     font-size: 13px;
     font-weight: 400;
     line-height: 17px;
@@ -44,7 +43,6 @@
     position: absolute;
     bottom: 120%;
     right: 80%;
-    font-family: Montserrat, sans-serif;
     font-size: 10px;
     font-weight: 400;
     line-height: 6px;
@@ -77,13 +75,10 @@
 
 .cartItemPrice {
     margin-left: 20%;
-    font-family: Montserrat, sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 17px;
     letter-spacing: 0px;
-
-
 }
 
 .closeCartItem {
