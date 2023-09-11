@@ -18,25 +18,31 @@
 }
 
 .cartItem Img {
-    width: 4vw;
-    height: 8vh;
+    width: 3vw;
+    height: 6vh;
+    padding-left: 8px;
 }
 
 .cartItemName {
+    margin-left: 8px;
     text-align: left;
-    max-width: 20%;
+    max-width: 25%;
     font-size: 13px;
     font-weight: 400;
     line-height: 17px;
     letter-spacing: 0px;
-
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 
 }
+
+
 
 .itemCount {
     display: flex;
     position: relative;
-    margin-left: 1vw;
+    margin-left: 3vw;
 }
 
 .itemCount span {

@@ -13,17 +13,19 @@
 }
 
 .productImg {
-    height: 45%;
+    height: 35%;
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 25%;
     margin-bottom: 5%;
+
 }
 
 .productImg:hover {
     transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .priceTag {
@@ -48,28 +50,59 @@
 }
 
 .productName {
-
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 19px;
     letter-spacing: 0px;
     text-align: left;
-    width: 50%;
     padding-top: 2%;
     color: #2C2C2C;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+.productName:hover {
+    overflow: visible;
+    white-space: normal;
+    width: 100%;
+    background-color: #eeeeee;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px;
+    z-index: 1;
+    transition: 0.3s;
 
 }
 
 .description {
     text-align: left;
-    font-size: 10px;
-    font-weight: 300;
+    font-size: 12px;
+    font-weight: 400;
     line-height: 12px;
     letter-spacing: 0px;
-    position: absolute;
-    top: 67%;
-    margin: 0px 1% 0px 1%;
+    margin: 0px 8px 0px 8px;
     color: #2C2C2C;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    height: 15vh;
+}
+
+.description:hover {
+    overflow: visible;
+    white-space: normal;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 2px 10px;
+    position: absolute;
+    z-index: 1;
+    font-size: 13px;
+
+    height: fit-content;
+}
+
+.description::first-letter {
+    text-transform: uppercase;
 }
 
 .card button {

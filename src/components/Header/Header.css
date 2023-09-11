@@ -6,6 +6,8 @@ header {
     justify-content: space-between;
     width: 100vw;
     height: 8vh;
+    position: fixed;
+    z-index: 3;
 }
 
 header div {

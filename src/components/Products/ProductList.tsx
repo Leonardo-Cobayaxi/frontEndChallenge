@@ -6,29 +6,33 @@ import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
 
 export type Product = {
-    brand: string
-    description: string;
     id: number
-    name: string
-    photo: string
+    title: string
+    description: string;
+    image: string
     price: number
+    category: string
 }
 
 export const ProductList: React.FC = () => {
     const [products, setProducts] = useState<Product[] | null>(null)
     function getAllProducts() {
-        const url = 'https://mks-challenge-api-frontend.herokuapp.com/api/v1/products?page=1&rows=8&sortBy=id&orderBy=ASC'
+        const url = 'https://fakestoreapi.com/products'
         try {
             axios.get(url).then((response) => {
-                setProducts(response.data.products)
+
+                setProducts(response.data)
             })
         } catch (error) {
             return
         }
     }
 
+
+
     useEffect(() => {
         getAllProducts()
+
     }, [])
 
     return (

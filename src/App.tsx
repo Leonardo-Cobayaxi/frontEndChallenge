@@ -5,7 +5,8 @@ import { ProductList } from './components/Products/ProductList';
 import { Cart } from './components/Cart/Cart';
 import { UserContextProvider } from './contexts/userContext';
 import { createGlobalStyle } from 'styled-components'
-const GLobalStyle = createGlobalStyle`
+const GLobalStyle = createGlobalStyle
+  `
 * {
   margin: 0;
   padding: 0;

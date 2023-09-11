@@ -10,19 +10,18 @@ export const Card = (Product: Product) => {
     function handleShopListClick() {
         setIsOpenCartItem(true)
         const idCheck = shopList.find(f => f.id === Product.id)
-        if (idCheck === undefined && shopList.length < 4) {
+        if (idCheck === undefined) {
             setShopList([...shopList, Product])
             setTotalPrice(Number(totalPrice) + Number(Product.price))
-            console.log(totalPrice)
         } else
             return
     }
 
     return (
         <div className='card' key={Product.id}>
-            <img className='productImg' src={Product.photo} alt="Product" />
+            <img className='productImg' src={Product.image} alt="Product" />
             <div className='priceTag'>
-                <p className='productName'>{Product.brand} {Product.name}</p>
+                <p className='productName'>{Product.title} </p>
                 <p className='price'>R${Product.price}</p>
             </div>
             <p className='description'>{Product.description}</p>

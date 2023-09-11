@@ -27,9 +27,9 @@ export const CartItem = (Product: Product) => {
 
     return (
         <div className={isOpenCartItem ? 'cartItem' : 'cartItemNone'}>
-            <img src={Product.photo} alt="Product"></img>
+            <img src={Product.image} alt="Product"></img>
             <div className='cartItemName'>
-                <p>{Product.brand + ' ' + Product.name}</p>
+                <p>{Product.title}</p>
             </div>
             <div className='itemCount'>
                 <span>Qtd</span>
@@ -42,7 +42,7 @@ export const CartItem = (Product: Product) => {
                         onClick={() => increase()}>+</button>
                 </div>
             </div>
-            <p className='cartItemPrice'>{Product.price}</p>
+            <p className='cartItemPrice'>R${Product.price}</p>
             <button
                 onClick={() => handleShopListCancel()}
                 className='closeCartItem'

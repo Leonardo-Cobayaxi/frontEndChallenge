@@ -4,4 +4,6 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-left: 10vw;
+    position: absolute;
+    margin-top: 8vh;
 }

@@ -24,13 +24,15 @@ export const Cart: React.FC = () => {
                     })
                     : null}
             </div>
+
             <div className='listTotal'>
                 <h3>Total:</h3>
             </div>
             <div className='listCost'>
-                <h3>R${totalPrice}</h3>
+                <h3>R${totalPrice.toFixed(2)}</h3>
             </div>
             <button className='checkout'><p>Finalizar Compra</p></button>
+
         </div>
     )
 
