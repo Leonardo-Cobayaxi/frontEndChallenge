@@ -13,15 +13,14 @@
 }
 
 .productImg {
-    height: 35%;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 25%;
-    margin-bottom: 5%;
-
+    padding-top: 8px;
+    height: 12vh;
+    width: 12vh;
+    align-self: center;
+    margin-bottom: 1rem;
 }
+
+
 
 .productImg:hover {
     transform: scale(1.1);
@@ -76,15 +75,14 @@
 
 .description {
     text-align: left;
-    font-size: 12px;
-    font-weight: 400;
+    font-size: 13px;
     line-height: 12px;
     letter-spacing: 0px;
     margin: 0px 8px 0px 8px;
     color: #2C2C2C;
     overflow: hidden;
     position: absolute;
-    top: 50%;
+    top: 46%;
     height: 15vh;
 }
 
@@ -97,7 +95,6 @@
     position: absolute;
     z-index: 1;
     font-size: 13px;
-
     height: fit-content;
 }
 
