@@ -46,10 +46,27 @@
 
 .shopList {
     margin: 14px 0px 0px 0px;
-    overflow: auto;
+    overflow-y: scroll;
     height: calc(100% - 33vh);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    padding-right: 16px;
 }
+
+.shopList::-webkit-scrollbar {
+    width: 8px;
+
+}
+
+.shopList::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.shopList::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
 
 
 
@@ -88,6 +105,5 @@
     font-weight: 700;
     line-height: 15px;
     letter-spacing: 0px;
-
 
 }

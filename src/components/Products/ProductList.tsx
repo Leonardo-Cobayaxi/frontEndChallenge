@@ -12,6 +12,7 @@ export type Product = {
     image: string
     price: number
     category: string
+    rating: any
 }
 
 export const ProductList: React.FC = () => {
@@ -20,8 +21,8 @@ export const ProductList: React.FC = () => {
         const url = 'https://fakestoreapi.com/products'
         try {
             axios.get(url).then((response) => {
-
                 setProducts(response.data)
+                console.log(response.data)
             })
         } catch (error) {
             return

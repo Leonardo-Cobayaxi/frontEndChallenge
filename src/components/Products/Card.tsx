@@ -3,6 +3,7 @@ import './Card.css'
 import { useContext } from 'react';
 import { Product } from './ProductList'
 import { userContext } from '../../contexts/userContext';
+import Rating from '@mui/material/Rating';
 
 export const Card = (Product: Product) => {
     const { setShopList, setIsOpenCartItem, shopList, setTotalPrice, totalPrice } = useContext(userContext)
@@ -20,11 +21,12 @@ export const Card = (Product: Product) => {
     return (
         <div className='card' key={Product.id}>
             <img className='productImg' src={Product.image} alt="Product" />
-            <div className='priceTag'>
-                <p className='productName'>{Product.title} </p>
-                <p className='price'>R${Product.price}</p>
+            <p className='productName'>{Product.title} </p>
+            <div className='description'>
+                <p>{Product.category}</p>
+                <Rating name="read-only" value={Product.rating.rate} readOnly />
             </div>
-            <p className='description'>{Product.description}</p>
+            <p className='price'>R${Product.price}</p>
             <button onClick={() => handleShopListClick()}>
                 <img src={Bag} alt="Bag icon" />
                 <p>Comprar</p>
