@@ -50,6 +50,9 @@
     height: calc(100% - 33vh);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
     padding-right: 16px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
 }
 
 .shopList::-webkit-scrollbar {
@@ -59,7 +62,7 @@
 
 .shopList::-webkit-scrollbar-track {
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0);
 }
 
 .shopList::-webkit-scrollbar-thumb {

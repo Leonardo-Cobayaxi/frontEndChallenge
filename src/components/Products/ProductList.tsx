@@ -45,7 +45,7 @@ export const ProductList: React.FC = () => {
                 : null}
             {products
                 ? products.map((product) => {
-                    return <Card {...product} />
+                    return <Card {...product} key={product.id} />
                 })
                 : null}
         </div>

@@ -13,7 +13,6 @@ export const CartItem = (Product: Product) => {
     }
     const increase = () => {
         setCounter(counter + 1);
-
         setTotalPrice(totalPrice + Number(Product.price))
     };
 
@@ -35,11 +34,8 @@ export const CartItem = (Product: Product) => {
                 <span>Qtd</span>
                 <div className='counter'>
                     <button onClick={() => decrease()}>-</button>
-                    <p className='counterBar'>|</p>
                     <p>{counter}</p>
-                    <p className='counterBar'>|</p>
-                    <button
-                        onClick={() => increase()}>+</button>
+                    <button onClick={() => increase()}>+</button>
                 </div>
             </div>
             <p className='cartItemPrice'>R${Product.price}</p>

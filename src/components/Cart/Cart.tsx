@@ -20,7 +20,7 @@ export const Cart: React.FC = () => {
             <div className='shopList'>
                 {shopList[0]
                     ? shopList.map((product) => {
-                        return <CartItem {...product} />
+                        return <CartItem {...product} key={product.id} />
                     })
                     : null}
             </div>
